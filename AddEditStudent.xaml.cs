@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace StudentDiary
     /// <summary>
     /// Logika interakcji dla klasy AddEditStudent.xaml
     /// </summary>
-    public partial class AddEditStudent : Window
+    public partial class AddEditStudent : MetroWindow
     {
         public AddEditStudent()
         {
