@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentDiary"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+        Title="Student Diary" Height="450" Width="800">
+    
     <Grid>
-        <Button Content="Przycisk 1" HorizontalAlignment="Left" Margin="71,92,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.277,0.681"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Add" Height="25" Width="100" Margin="5"/>
+            <Button Content="Edit" Height="25" Width="100" Margin="5"/>
+            <Button Content="Delete" Height="25" Width="100" Margin="5"/>
+            <ComboBox Height="26" Width="150" Margin="5"/>
+            <Button Content="Refresh" Height="25" Width="100" Margin="5"/>
+        </StackPanel>
+        <DataGrid Grid.Row="1" Margin="5"/>
     </Grid>
 </Window>
